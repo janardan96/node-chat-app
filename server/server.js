@@ -3,9 +3,9 @@ const path = require("path");
 const socketIO = require("socket.io");
 const http = require("http");
 
-const {generateMessage,generateLocationMessage}=require("./utlis/message");
-const{isRealString}=require("./utlis/validation");
-const{Users}=require("./utlis/users");
+const {generateMessage,generateLocationMessage}=require("./utlis/message.js");
+const{isRealString}=require("./utlis/validation.js");
+const{Users}=require("./utlis/users.js");
 
 const publicPath = path.join(__dirname, "../public");
 const port = process.env.PORT || 3000
